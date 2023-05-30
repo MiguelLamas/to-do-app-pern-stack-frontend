@@ -5,9 +5,7 @@ import EditTodo from "./EditTodo";
 const ListTodos = () => {
   const [todos, setTodos] = useState([]); //initially an empty array [] because we want to get all todos
 
-  useEffect(() => {
-    getTodos();
-  }, []);
+  
 
   //get all todos
   const getTodos = async () => {
@@ -20,6 +18,10 @@ const ListTodos = () => {
       console.error(err.message);
     }
   };
+
+  useEffect(() => {
+    getTodos();
+  }, []);
 
     //delete todo function
     const deleteTodo = async (id) => {
