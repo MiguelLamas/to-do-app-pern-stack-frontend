@@ -14,7 +14,7 @@ const InputTodo = () => {
 
 
 
-            const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/todos", {
+            const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
@@ -25,7 +25,6 @@ const InputTodo = () => {
             
         } catch (err) {
             console.error(err.message);
-            return err;
         }
     };
     
