@@ -22,7 +22,7 @@ const ListTodos = () => {
   const getTodos = async () => {
     try {
       const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/todos");
-      const jsonData = await response.JSON();
+      const jsonData = await response.json();
 
       setTodos(jsonData);
     } catch (err) {
