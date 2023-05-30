@@ -5,23 +5,11 @@ import EditTodo from "./EditTodo";
 const ListTodos = () => {
   const [todos, setTodos] = useState([]); //initially an empty array [] because we want to get all todos
 
-  //delete todo function
-  const deleteTodo = async (id) => {
-    try {
-      const deleteTodo = await fetch(`https://to-do-app-pern-stack-api.onrender.com/todos/${id}`, {
-        method: "DELETE",
-      });
-
-      setTodos(todos.filter((todo) => todo.todo_id !== id));
-    } catch (err) {
-      console.error(err.message);
-    }
-  };
 
   //get all todos
   const getTodos = async () => {
     try {
-      const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/todos");
+      const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/");
       const jsonData = await response.json();
 
       setTodos(jsonData);
@@ -33,6 +21,19 @@ const ListTodos = () => {
   useEffect(() => {
     getTodos();
   }, []);
+
+    //delete todo function
+    const deleteTodo = async (id) => {
+      try {
+        const deleteTodo = await fetch(`https://to-do-app-pern-stack-api.onrender.com/todos/${id}`, {
+          method: "DELETE",
+        });
+  
+        setTodos(todos.filter((todo) => todo.todo_id !== id));
+      } catch (err) {
+        console.error(err.message);
+      }
+    };
 
   return (
     <>
