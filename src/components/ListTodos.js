@@ -8,7 +8,7 @@ const ListTodos = () => {
   //delete todo function
   const deleteTodo = async (id) => {
     try {
-      const deleteTodo = await fetch(`https://to-do-app-pern-stack-api.onrender.com/${id}`, {
+      const deleteTodo = await fetch(`https://to-do-app-pern-stack-api.onrender.com/todos/${id}`, {
         method: "DELETE",
       });
 
@@ -21,8 +21,8 @@ const ListTodos = () => {
   //get all todos
   const getTodos = async () => {
     try {
-      const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/");
-      const jsonData = await response.json();
+      const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/todos");
+      const jsonData = await response.JSON();
 
       setTodos(jsonData);
     } catch (err) {

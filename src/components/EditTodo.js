@@ -11,7 +11,7 @@ const EditTodo = ({ todo }) => {
       const body = { description };
 
       //proxy
-      const response = await fetch(`https://to-do-app-pern-stack-api.onrender.com/${todo.todo_id}`, {
+      const response = await fetch(`https://to-do-app-pern-stack-api.onrender.com/todos/${todo.todo_id}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
