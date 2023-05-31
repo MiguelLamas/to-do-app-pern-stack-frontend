@@ -13,6 +13,7 @@ const ListTodos = () => {
       const response = await fetch(`https://to-do-app-pern-stack-api.onrender.com/todos`); 
       const jsonData = await response.json();
 
+      console.log(response)
       setTodos(jsonData);
     } catch (err) {
       console.error(err.message);
