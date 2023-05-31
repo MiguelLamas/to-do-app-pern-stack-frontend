@@ -14,13 +14,13 @@ const InputTodo = () => {
 
 
 
-            const response = await fetch("https://to-do-app-pern-stack-api.onrender.com/", {
+            const response = await fetch(`https://to-do-app-pern-stack-api.onrender.com/`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
             });
 
-            window.location = "/";
+            // window.location = "/";
             console.log(response);
             
         } catch (err) {
