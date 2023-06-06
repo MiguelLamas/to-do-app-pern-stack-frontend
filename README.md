@@ -19,17 +19,21 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
 * Using Bootstrap v5 Library to add Tables, Buttons and Modals to the app.
 
 
-## Built with:
+## Front End Built with:
 
 * React.js
 * JavaScript
+* HTML
+* CSS
+* Bootstrap 5
+
+## Back End Built with:
+
 * Node.js
 * Express
 * PostgreSQL
 * CORS - Cross-Origin Resource Sharing
-* HTML
-* CSS
-* Bootstrap 5
+
 
 ## Deployed with:
 
