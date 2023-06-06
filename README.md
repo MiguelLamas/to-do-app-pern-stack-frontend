@@ -2,11 +2,11 @@
 
 A simple Todo App built with the PERN stack combining PERN technologies, so they can interact via CRUD functions in order to function as full-stack web application.
 
-**This README is for the Front-End of the Todo PERN App. If you would like to explore the Back-End of the app please go to the [Back-End repository](https://github.com/MiguelLamas/to-do-app-pern-stack-api)**
+**This README is for the Frontend of the Todo PERN App. If you would like to explore the Back-End of the app please go to the [Backend repository](https://github.com/MiguelLamas/to-do-app-pern-stack-api)**
 
 ## Main Learning Points:
 
-* How the Front End interacts with the Server and Relational Database via REST API which is using Hypertext Transfer Protocol (HTTP Requests) to run CRUD operations in the database.
+* How the Frontend interacts with the Server and Relational Database via REST API which is using Hypertext Transfer Protocol (HTTP Requests) to run CRUD operations in the database.
 * Actual CRUD Operations only occur in our database (whether postgres, MongoDB, MySQL...)
 * Building a server (index.js) require libraries, adding the middleware app.use and app.listen to start server.
 * How to create a Postgres Database and Table (including defining our PostgreSQL Schema)
@@ -19,7 +19,7 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
 * Using Bootstrap v5 Library to add Tables, Buttons and Modals to the app.
 
 
-## Front End Built with:
+## Frontend Built with:
 
 * React.js
 * JavaScript
@@ -27,7 +27,7 @@ A simple Todo App built with the PERN stack combining PERN technologies, so they
 * CSS
 * Bootstrap 5
 
-## Back End Built with:
+## Backend Built with:
 
 * Node.js
 * Express
