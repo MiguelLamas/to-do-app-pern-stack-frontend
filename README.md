@@ -1,6 +1,8 @@
 # Todo App - Frontend (PERN Stack - Postgres, Express, React, and Node)
 
-A simple Todo App built with the PERN stack combining PERN technologies, so they can interact in order for it to function as full-stack web application.
+A simple Todo App built with the PERN stack combining PERN technologies, so they can interact via CRUD functions in order to function as full-stack web application.
+
+**This README is for the Front-End of the Todo PERN App. If you would like to explore the Back-End of the app please go to the [Back-End repository](https://github.com/MiguelLamas/to-do-app-pern-stack-api)**
 
 ## Main Learning Points:
 
